@@ -12,25 +12,84 @@
 
         });
     </script>
+    <style type="text/css">
+    button.button.button-block.button-positive.customer-tijiao-btn {
+        margin-bottom: 40px;
+        border-color: #3DBCFF;
+        background-color: #3DBCFF;
+    }
+
+    i.icon.ion-gear-a.customer-set-icon {
+        height: 47px;
+        float: left;
+        padding-left: 16px;
+    }
+
+    i.icon.ion-gear-a.customer-set-icon::before {
+        line-height: 47px;
+        font-size: 20px;
+    }
+
+    i.ion-person.customer-person::before {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+    i.ion-locked.customer-locked::before {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+    body {
+        background: #008cd6;
+        color: #fff;
+    }
+
+    .tabs.tabs-icon-only.customer-tabs {
+        background: #008cd6;
+        color: #fff;
+    }
+
+    .customer-img-div a img {
+        width: 240px;
+        /* height: 80px; */
+        margin: 0 auto;
+        display: block;
+        padding-top: 50px;
+    }
+    </style>
 </head>
 
 <body ng-controller="MyCtrl">
     <div id="example-inset-forms" class="ionic-body active-preview">
-        <div class="bar bar-header">
-            <div class="h1 title">登录</div>
-        </div>
+        <div class="customer-img-div"><a class="logo" title="美萍收银宝">
+                    <img src="./imgs/mplogin6.png">
+                </a></div>
         <div class="content has-header">
             <div class="list list-inset">
                 <label class="item item-input">
-                    <input type="text" placeholder="用户名">
+                    <i class="ion-person customer-person"></i>
+                    <input type="text" placeholder="输入用户名">
                 </label>
                 <label class="item item-input">
-                    <input type="password" placeholder="密码">
+                    <i class="ion-locked customer-locked"></i>
+                    <input type="password" placeholder="输入密码">
                 </label>
             </div>
             <div class="padding">
-                <button class="button button-block button-positive">提交</button>
+                <button class="button button-block button-positive customer-tijiao-btn">登录</button>
             </div>
+        </div>
+        <div class="tabs tabs-icon-only customer-tabs">
+            <a class="tab-item" href="#">
+        <i class="icon ion-gear-a customer-set-icon"></i>
+      </a>
+            <a class="tab-item" href="#">
+        
+      </a>
+            <a class="tab-item" href="#">
+        2016v3.0
+      </a>
         </div>
     </div>
     </div>
